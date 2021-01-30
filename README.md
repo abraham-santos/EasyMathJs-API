@@ -1,10 +1,10 @@
-### EasyMathJs API
+## EasyMathJs API
 
 Repository created for the Typescript with node and Express.
 
 
 
-## Quick Start
+### Quick Start
 To install this dependency use:
 
 ```
