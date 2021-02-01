@@ -7,6 +7,7 @@ pipeline {
         stage('Build') {
             agent any
             steps {
+                sh 'npm install'
                 sh 'npm run tsc'
                 sh 'webpack build'
                 sh 'npm run tsc'
