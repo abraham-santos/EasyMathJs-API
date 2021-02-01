@@ -9,6 +9,7 @@ pipeline {
             steps {
                 sh 'npm install'
                 sh 'npm run tsc'
+                sh 'nvm use v14.15.4'
                 sh 'webpack build'
                 sh 'npm run tsc'
                 sh 'npm publish'
