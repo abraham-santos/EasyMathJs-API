@@ -9,7 +9,6 @@ pipeline {
             steps {
                 sh 'npm install'
                 sh 'npm run tsc'
-                sh 'sudo npm link webpack'
                 sh 'npm i -g webpack webpack-cli'
                 sh 'export PATH=$PWD/node_modules/.bin:$PATH'
                 sh 'webpack build'
