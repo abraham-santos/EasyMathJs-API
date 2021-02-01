@@ -9,6 +9,7 @@ pipeline {
             steps {
                 sh 'npm install'
                 sh 'npm run tsc'
+                sh 'export PATH=$PWD/node_modules/.bin:$PATH'
                 sh 'webpack build'
                 sh 'npm run tsc'
                 sh 'npm publish'
