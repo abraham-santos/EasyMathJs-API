@@ -21,11 +21,13 @@ pipeline {
             }
         }
         stage('Test') {
+            agent any
             steps {
                 sh 'npm test'
             }
         }
         stage('Deploy') {
+            agent any
             steps {
                 echo 'Deploying....'
             }
