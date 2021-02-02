@@ -3,6 +3,13 @@ pipeline {
     triggers {
         githubPush()
     }
+    environment {
+        NEXUS_VERSION = "nexus3"
+        NEXUS_PROTOCOL = "http"
+        NEXUS_URL = "192.168.160.128:8081"
+        NEXUS_REPOSITORY = "npm-repository"
+        NEXUS_CREDENTIAL_ID = "nexus-user-credentials"
+    }
     stages {
         stage('Build') {
             agent any
