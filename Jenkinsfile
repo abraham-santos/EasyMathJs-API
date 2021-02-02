@@ -16,7 +16,6 @@ pipeline {
             steps {
                 sh 'npm install'
                 sh 'npm run tsc'
-                sh 'npm i --save-dev webpack webpack-cli'
                 sh 'export PATH=$PWD/node_modules/.bin:$PATH'
                 sh 'npm publish'
             }
